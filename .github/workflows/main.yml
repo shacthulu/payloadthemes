@@ -1,0 +1,24 @@
+name: Update Theme Manifest
+
+on:
+  push:
+    paths:
+      - 'themes/**/*.scss'
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Process SCSS Files and Update Manifest
+      run: bash ./scripts/process_themes.sh
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        git add manifest.json
+        git commit -m "Update manifest.json" || echo "No changes to commit"
+        git push
