@@ -1,0 +1,144 @@
+/* @theme SomethingElse! */
+/* @description Creepy!!!! */
+/* @author Boba Fett */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --base-px: 25;
+    --base-body-size: 13;
+    --base: calc((var(--base-px) / var(--base-body-size)) * .75rem);
+    --gutter-h: 5rem;
+    --color-base-0: rgb(240, 248, 255);  /* Very light slate blue, akin to Alice Blue */
+    --color-base-50: rgb(228, 236, 245); /* Slightly darker shade of light slate blue */
+    --color-base-100: rgb(208, 224, 237); /* Soft slate blue */
+    --color-base-150: rgb(185, 207, 225); /* Subtle slate blue */
+    --color-base-200: rgb(162, 190, 212); /* Medium light slate blue */
+    --color-base-250: rgb(139, 173, 199); /* Grayish shade of slate blue */
+    --color-base-300: rgb(117, 156, 186); /* Slate blue with more gray */
+    --color-base-350: rgb(96, 139, 173);  /* Deeper shade of slate blue */
+    --color-base-400: rgb(75, 122, 160);  /* Even deeper slate blue */
+    --color-base-450: rgb(63, 104, 136);  /* Starting to approach slate gray */
+    --color-base-500: rgb(53, 90, 118);   /* Balanced slate blue */
+    --color-base-550: rgb(43, 76, 100);   /* Darker slate blue */
+    --color-base-600: rgb(34, 62, 82);    /* Slate gray with a hint of blue */
+    --color-base-650: rgb(28, 50, 66);    /* Dark slate gray */
+    --color-base-700: rgb(22, 40, 52);    /* Darker slate gray, almost blue-black */
+    --color-base-750: rgb(17, 30, 39);    /* Very dark slate blue */
+    --color-base-800: rgb(13, 21, 28);    /* Almost black with a hint of blue */
+    --color-base-850: rgb(10, 15, 20);    /* Very dark with a subtle blue tint */
+    --color-base-900: rgb(7, 10, 13);     /* Nearly black, cool tone */
+    --color-base-950: rgb(4, 6, 8);       /* Off-black with a blue undertone */
+    --color-base-1000: rgb(0, 0, 0);      /* Pure black */
+
+    --theme-elevation-0: var(--color-base-0);
+    --theme-elevation-50: var(--color-base-50);
+    --theme-elevation-100: var(--color-base-100);
+    --theme-elevation-150: var(--color-base-150);
+    --theme-elevation-200: var(--color-base-200);
+    --theme-elevation-250: var(--color-base-250);
+    --theme-elevation-300: var(--color-base-300);
+    --theme-elevation-350: var(--color-base-350);
+    --theme-elevation-400: var(--color-base-400);
+    --theme-elevation-450: var(--color-base-450);
+    --theme-elevation-500: var(--color-base-500);
+    --theme-elevation-550: var(--color-base-550);
+    --theme-elevation-600: var(--color-base-600);
+    --theme-elevation-650: var(--color-base-650);
+    --theme-elevation-700: var(--color-base-700);
+    --theme-elevation-750: var(--color-base-750);
+    --theme-elevation-800: var(--color-base-800);
+    --theme-elevation-850: var(--color-base-850);
+    --theme-elevation-900: var(--color-base-900);
+    --theme-elevation-950: var(--color-base-950);
+    --theme-elevation-1000: var(--color-base-1000);
+
+    --font-body: 'Roboto', sans-serif;
+}
+
+html[data-theme='dark'] {
+    --theme-border-color: var(--theme-elevation-150);
+  
+    --: var(--color-base-900);
+    --theme-elevation-50: var(--color-base-850);
+    --theme-elevation-100: var(--color-base-800);
+    --theme-elevation-150: var(--color-base-750);
+    --theme-elevation-200: var(--color-base-700);
+    --theme-elevation-250: var(--color-base-650);
+    --theme-elevation-300: var(--color-base-600);
+    --theme-elevation-350: var(--color-base-550);
+    --theme-elevation-400: var(--color-base-450);
+    --theme-elevation-450: var(--color-base-400);
+    --theme-elevation-550: var(--color-base-350);
+    --theme-elevation-600: var(--color-base-300);
+    --theme-elevation-650: var(--color-base-250);
+    --theme-elevation-700: var(--color-base-200);
+    --theme-elevation-750: var(--color-base-150);
+    --theme-elevation-800: var(--color-base-100);
+    --theme-elevation-850: var(--color-base-50);
+    --theme-elevation-900: var(--color-base-0);
+    --theme-elevation-950: var(--color-base-0);
+    --theme-elevation-1000: var(--color-base-0);
+}
+
+.nav nav a.active {
+    font-weight: normal;
+    padding-left: 0;
+    font-weight: 700;
+}
+
+table {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--theme-elevation-200);
+}
+
+.list-controls__wrap {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--theme-elevation-200);
+}
+
+.rs__control {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--theme-elevation-200);
+}
+
+input {
+    border-radius: 5px !important; 
+}
+
+.rs__control {
+    border-radius: 5px !important; 
+}
+
+.rs_menu {
+    border-radius: 5px !important; 
+}
+
+.payload-settings {
+    margin: 1.75rem;
+}
+
+.auth-fields {
+    padding: 2.25rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--theme-elevation-250);
+    background-color: var(--theme-elevation-100);
+}
+
+.btn--style-primary {
+    background-color: var(--theme-elevation-700);
+    color: var(--theme-elevation-0);
+}
+
+.table th, .table td {
+    padding: .8rem;
+    min-width: 150px;
+}
