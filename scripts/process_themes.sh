@@ -10,7 +10,7 @@ for file in themes/*.scss; do
     description=$(sed -n '2p' $file | cut -d ' ' -f3 | tr -d '*/')
     author=$(sed -n '3p' $file | cut -d ' ' -f3 | tr -d '*/')
     version=$(sed -n '4p' $file | cut -d ' ' -f3 | tr -d '*/')
-    download_link="https://raw.githubusercontent.com/[username]/[repo]/master/$file"
+    download_link="https://raw.githubusercontent.com/shacthulu/payloadthemes/master/$file"
 
     # Append to JSON
     if [ "$first" = true ]; then
