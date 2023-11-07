@@ -1,22 +1,22 @@
 {
-    "CooldownOnline!": {
+    "CooldownOnline!!": {
         "description": "Creepy!!!!",
         "author": "Boba",
         "version": "1.0.2",
-        "download_link": "https://github.com/[username]/[repo]/blob/master/themes/coolitdown.scss"
+        "download_link": "https://raw.githubusercontent.com/[username]/[repo]/master/themes/coolitdown.scss"
     }
 ,
     "SomethingElse!": {
         "description": "asdfasdf!!!!",
         "author": "Bobby",
         "version": "2.0.1",
-        "download_link": "https://github.com/[username]/[repo]/blob/master/themes/somethingelse.scss"
+        "download_link": "https://raw.githubusercontent.com/[username]/[repo]/master/themes/somethingelse.scss"
     }
 ,
     "SomethinsdfgElse!": {
         "description": "asdfasdf!!!!",
         "author": "Bobby",
         "version": "2.0.1",
-        "download_link": "https://raw.githubusercontent.com/shacthulu/payloadthemes/main/themes/test.scss"
+        "download_link": "https://raw.githubusercontent.com/[username]/[repo]/master/themes/test.scss"
     }
 }
